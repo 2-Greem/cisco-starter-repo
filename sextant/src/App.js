@@ -2,6 +2,7 @@ import './App.css';
 import Banner from './Banner.js';
 import Exhibit from './Exhibit.js';
 import BinarySelector from './BinarySelector.js';
+import WebSocketComponent from './WebSocketComponent.js';
 import { useState } from 'react';
 
 function App() {
@@ -48,6 +49,7 @@ function App() {
       {IPType && IPAddress && (
         <Exhibit heading={IPType} content={IPAddress} />
       )}
+      <WebSocketComponent></WebSocketComponent>
     </div>
   );
 }
